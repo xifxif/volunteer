@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./login.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;700;800&display=swap"
+    />
+  </head>
+  <body>
+    <div class="sign-in-page-parent">
+      <div class="sign-in-page">
+        <div class="frame-parent">
+          <div class="frame-group">
+            <img class="frame-child" alt="" src="framelogo.png" />
+
+            <div class="volunnect">Volunnect</div>
+          </div>
+          <div class="beranda-parent">
+            <a href="./homepage.html" class="beranda"><b>Beranda</b></a>
+            <a href="./eventlist.html" class="beranda"><b>Temukan Event</b></a>
+            <a href="./aboutus.html" class="beranda"><b>Tentang Kami</b></a>
+          </div>
+          <div class="frame-container">
+            <div class="daftar-wrapper">
+              <a href="./signin.html" class="daftar">Daftar</a>
+            </div>
+            <div class="login-wrapper">
+              <a href="./login.html" class="login">Login</a>
+            </div>
+          </div>
+        </div>
+        <div class="black-framelogo-parent">
+          <img class="black-framelogo-icon" alt="" src="black_framelogo.png" />
+
+          <div class="welcome-to-volunnect-wrapper">
+            <div class="welcome-to-volunnect-container">
+              <span class="welcome-to-volunnect-container1">
+                <span>Welcome to </span>
+                <span class="volunnect1">Volunnect</span>
+              </span>
+            </div>
+          </div>
+          <div class="frame-div">
+            <div class="email-wrapper">
+              <div class="daftar">
+                <input type="text" class="email-input" placeholder="Email" />
+              </div>
+            </div>
+            <div class="email-wrapper">
+              <div class="daftar">
+                <input
+                  type="password"
+                  class="password-input"
+                  placeholder="Password"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="forgot-your-password-wrapper">
+            <div class="forgot-your-password">Forgot your password?</div>
+          </div>
+          <div class="frame-wrapper">
+            <div class="rectangle-parent">
+             
+              <input
+                type="checkbox"
+                id="remember-device"
+                class="remember-checkbox"
+              />
+              <label for="remember-device">
+                <span>Remember your device?</span>
+              </label>
+            </div>
+          </div>
+          <div class="log-in-wrapper" id="log-in-wrapper">
+            <a href="./homepage.html" class="daftar">Log In</a>
+          </div>
+          <div class="dont-have-an-account-sign-up-wrapper">
+            <div class="beranda1">
+              <span>Don’t have an account? </span>
+              <a href="login.html" class="sign-up">Sign Up</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      document
+        .getElementById("log-in-wrapper")
+        .addEventListener("click", function () {
+          // Ambil nilai dari input dan textarea
+          var emailInput = document.querySelector(".email-input").value.trim();
+          var passwordInput = document
+            .querySelector(".password-input")
+            .value.trim();
+
+          // Periksa apakah input tidak kosong
+          if (emailInput !== "" && passwordInput !== "") {
+            document.getElementById("overlay").style.display = "flex"; // Tampilkan overlay
+          } else {
+            alert("Mohon isi semua kolom inputan."); // Tampilkan peringatan jika ada kolom yang kosong
+          }
+        });
+
+      document
+        .getElementById("login-button")
+        .addEventListener("click", function () {
+          window.location.href = "./homepage.html"; // Ganti 'index.html' dengan URL halaman beranda Anda
+        });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,302 @@
+body {
+    margin: 0 auto;
+    line-height: normal;
+    display: block;
+    box-sizing: border-box;
+}
+
+.frame-child {
+    width: 80px;
+    position: relative;
+    height: 80px;
+    overflow: hidden;
+    flex-shrink: 0;
+    object-fit: cover;
+}
+.volunnect {
+    position: relative;
+    font-weight: 800;
+}
+.frame-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 29px;
+}
+.beranda {
+    position: relative;
+    text-decoration: none;
+    color: white;
+}
+.beranda-parent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 50px;
+    font-size: 14px;
+}
+.daftar {
+    position: relative;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+  }
+  .login {
+    position: relative;
+    font-weight: 500;
+    color: #ff466e;
+    text-decoration: none;
+  }
+.daftar-wrapper {
+    border-radius: 5px;
+    border: 1px solid #fff;
+    box-sizing: border-box;
+    height: 42px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 32px;
+}
+.login-wrapper {
+    border-radius: 5px;
+    background-color: #fff;
+    height: 42px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 32px;
+    box-sizing: border-box;
+    color: #ff466e;
+}
+.frame-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 18px;
+    font-size: 16px;
+}
+.frame-parent {
+    width: 1920px;
+    background-color: #ff466e;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 160px;
+    box-sizing: border-box;
+    gap: 161px;
+}
+.black-framelogo-icon {
+    width: 128px;
+    position: relative;
+    height: 128px;
+    overflow: hidden;
+    flex-shrink: 0;
+    object-fit: cover;
+}
+.volunnect1 {
+    color: #ff466e;
+}
+.welcome-to-volunnect-container1 {
+    width: 100%;
+}
+.welcome-to-volunnect-container {
+    width: 284px;
+    position: relative;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+.welcome-to-volunnect-wrapper {
+    width: 284px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+}
+.email-wrapper {
+    align-self: stretch;
+    border-radius: 12px;
+    background-color: #d9d9d9;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 8px;
+}
+.email-input {
+    flex-grow: 1; 
+    width: 280px;
+    text-align: left; 
+    padding: 8px; 
+    margin-right: 8px;
+    border: none transparent;
+    border-radius: 4px;
+    outline: none;
+    background-color: #d9d9d9;
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Warna hitam dengan transparansi */
+    z-index: 1000; /* Pastikan overlay berada di atas elemen lain */
+    display: flex; /* Menggunakan flexbox untuk memusatkan konten */
+    justify-content: center; /* Memusatkan secara horizontal */
+    align-items: center; /* Memusatkan secara vertikal */
+}
+.overlay-content {
+    background-color: #ff466e; /* Latar belakang kotak */
+    padding: 20px; /* Ruang di dalam kotak */
+    border-radius: 8px; /* Sudut kotak yang membulat */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Bayangan untuk efek kedalaman */
+    text-align: center; /* Mengatur teks agar berada di tengah */
+    width: 300px;
+    max-width: 90%;
+}
+.overlay-content p {
+    font-size: 18px;
+    color: #fff;
+}
+
+.overlay-content h2 {
+    font-size: 20px;
+    color: #fff;
+}
+
+#closeOverlay {
+    margin-top: 20px; /* Jarak antara teks dan tombol */
+    padding: 10px 20px; /* Ruang dalam tombol */
+    background-color: #d9d9d9; /* Warna latar belakang tombol */
+    color: #1e1e1e; /* Warna teks tombol */
+    border: none; /* Menghilangkan border tombol */
+    border-radius: 5px; /* Sudut tombol yang membulat */
+    cursor: pointer; /* Menunjukkan kursor pointer saat hover */
+}
+.password-input {
+    flex-grow: 1; 
+    width: 280px;
+    text-align: left; 
+    padding: 8px; 
+    margin-right: 8px;
+    border: none transparent;
+    border-radius: 4px;
+    outline: none;
+    background-color: #d9d9d9;
+}
+.frame-div {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 16px;
+    text-align: left;
+    font-size: 14px;
+}
+.forgot-your-password {
+    position: relative;
+    font-weight: 300;
+}
+.forgot-your-password-wrapper {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0px 10px 10px;
+    text-align: right;
+    color: #ff466e;
+}
+.frame-item {
+    width: 10px;
+    position: relative;
+    background-color: #d9d9d9;
+    height: 10px;
+}
+.rectangle-parent {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 3px;
+}
+.frame-wrapper {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.log-in-wrapper {
+    align-self: stretch;
+    border-radius: 12px;
+    background-color: #ff466e;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    font-size: 14px;
+    color: #fff;
+}
+.sign-up {
+    text-decoration: underline;
+    color: #ff466e;
+}
+.dont-have-an-account-sign-up-wrapper {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.black-framelogo-parent {
+    width: 316px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 9px;
+    font-size: 12px;
+    color: #1e1e1e;
+}
+.sign-in-page {
+    align-self: stretch;
+    background-color: #fff;
+    height: 1024px;
+    overflow: hidden;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    gap: 225px 620px;
+}
+.sign-in-page-parent {
+    width: 100%;
+    position: relative;
+    height: 1024px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+    font-family: Manrope;
+}
+

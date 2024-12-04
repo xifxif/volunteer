@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap"
+    />
+    <style>
+      body {
+        margin: 0 auto;
+        line-height: normal;
+        display: block;
+        box-sizing: border-box;
+      }
+
+      .frame-child {
+        width: 945px;
+        position: relative;
+        height: 1024px;
+        object-fit: cover;
+      }
+      .create-an-account {
+        align-self: stretch;
+        position: relative;
+      }
+      .volunteer {
+        position: relative;
+        font-weight: 600;
+      }
+      .volunteer-wrapper {
+        width: 209px;
+        border-radius: 9px;
+        background-color: #ff466e;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        box-sizing: border-box;
+      }
+      .organizer-wrapper {
+        width: 208px;
+        border-radius: 9px;
+        border: 1px solid #c1c1c1;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        color: #1e1e1e;
+      }
+      .frame-group {
+        align-self: stretch;
+        height: 39px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 30px;
+        text-align: left;
+        font-size: 14px;
+        color: #fff;
+      }
+      .create-an-account-parent {
+        align-self: stretch;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: flex-start;
+        gap: 48px;
+        text-align: center;
+      }
+      .email {
+        position: relative;
+      }
+      .email-wrapper {
+        align-self: stretch;
+        border-radius: 9px;
+        background-color: #d9d9d9;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 8px 10px;
+      }
+      .first-name-wrapper {
+        width: 209px;
+        border-radius: 9px;
+        background-color: #d9d9d9;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 8px 10px;
+        box-sizing: border-box;
+      }
+      .frame-parent1 {
+        align-self: stretch;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 29px;
+      }
+      .frame-item {
+        width: 8px;
+        position: relative;
+        border-radius: 50%;
+        background-color: #ff466e;
+        height: 8px;
+      }
+      .ellipse-parent {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 4px;
+      }
+      .frame-inner {
+        width: 8px;
+        position: relative;
+        border-radius: 50%;
+        background-color: #d9d9d9;
+        height: 8px;
+      }
+      .frame-parent2 {
+        align-self: stretch;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 205px;
+        text-align: center;
+      }
+      .nomor-handphone-wrapper {
+        width: 328px;
+        border-radius: 9px;
+        background-color: #d9d9d9;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 8px 10px;
+        box-sizing: border-box;
+      }
+      .mdieye-icon {
+        width: 14px;
+        position: relative;
+        height: 14px;
+      }
+      .password-parent {
+        width: 447px;
+        border-radius: 9px;
+        background-color: #d9d9d9;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 8px 10px;
+        box-sizing: border-box;
+        gap: 345px;
+      }
+      .frame-wrapper1 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+      }
+      .rectangle-icon {
+        width: 10px;
+        position: relative;
+        border-radius: 1px;
+        height: 10px;
+      }
+      .privacy-policy {
+        font-weight: 600;
+        color: #ff466e;
+      }
+      .vector-parent {
+        width: 328px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 5px;
+        font-size: 10px;
+      }
+      .create-an-account-wrapper {
+        align-self: stretch;
+        border-radius: 9px;
+        background-color: #ff466e;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        color: #fff;
+      }
+      .frame-div {
+        align-self: stretch;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 10px;
+        font-size: 14px;
+      }
+      .sign-in {
+        color: #ff466e;
+      }
+      .already-have-an-account-sign-wrapper {
+        align-self: stretch;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 0px 10px;
+        font-size: 12px;
+      }
+      .frame-parent {
+        width: 447px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 20px;
+      }
+      .frame-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 10px;
+      }
+      .frame-wrapper {
+        width: 975px;
+        border-radius: 32px 0px 0px 32px;
+        background-color: #fff;
+        height: 1024px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 194px 129px;
+        box-sizing: border-box;
+      }
+      .rectangle-parent {
+        width: 1920px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .sigin-up-page-volunteer {
+        align-self: stretch;
+        background-color: #fff;
+        height: 1024px;
+        overflow: hidden;
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+      }
+      .sigin-up-page-volunteer-parent {
+        width: 100%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        text-align: left;
+        font-size: 48px;
+        color: #1e1e1e;
+        font-family: Manrope;
+      }
+
+      .email-input,
+      .first-name-input,
+      .last-name-input,
+      .address-input,
+      .phone-input,
+      .phone-input-2,
+      .password-input {
+        width: 100%;
+        border-radius: 9px;
+        background-color: #d9d9d9;
+        padding: 8px 10px;
+        box-sizing: border-box;
+        border: none; /* Hapus border default */
+        font-size: 14px; /* Sesuaikan ukuran font jika perlu */
+      }
+
+      .email-input:focus,
+      .first-name-input:focus,
+      .last-name-input:focus,
+      .date-input:focus,
+      .address-input:focus,
+      .phone-input:focus,
+      .phone-input-2:focus,
+      .password-input:focus {
+        outline: none; /* Hapus outline default saat fokus */
+      }
+	  input[type="checkbox"] {
+		width: 16px; /* Atur lebar checkbox */
+		height: 16px; /* Atur tinggi checkbox */
+		margin-right: 5px; /* Spasi antara checkbox dan label */
+	  }
+	  .date-input {
+		width: 100%;
+		border-radius: 9px;
+		background-color: #d9d9d9;
+		padding: 8px 10px;
+		box-sizing: border-box;
+		border: none; /* Hapus border default */
+		font-size: 14px; /* Sesuaikan ukuran font jika perlu */
+	  }
+	  
+	  .date-input:focus {
+		outline: none; /* Hapus outline default saat fokus */
+	  }
+	  .create-account-button {
+		width: 100%; /* Atur lebar tombol sesuai dengan input lainnya */
+		border-radius: 9px; /* Sama dengan input lainnya */
+		background-color: #ff466e; /* Warna latar belakang */
+		color: #fff; /* Warna teks */
+		padding: 10px; /* Padding untuk tombol */
+		border: none; /* Hapus border default */
+		font-size: 14px; /* Ukuran font */
+		cursor: pointer; /* Menunjukkan bahwa ini adalah elemen yang dapat diklik */
+	  }
+	  
+	  .create-account-button:hover {
+		background-color: #e03e5e; /* Warna saat hover */
+	  }
+    </style>
+  </head>
+  <body>
+    <div class="sigin-up-page-volunteer-parent">
+      <div class="sigin-up-page-volunteer">
+        <div class="rectangle-parent">
+          <img class="frame-child" alt="" src="Rectangle 60.png" />
+
+          <div class="frame-wrapper">
+            <div class="frame-container">
+              <div class="frame-parent">
+                <div class="create-an-account-parent">
+                  <b class="create-an-account">Create an account</b>
+                </div>
+                <div class="frame-div">
+                  <div class="email-wrapper">
+                    <input
+                      type="email"
+                      placeholder="example@gmail.com"
+                      class="email-input"
+                    />
+                  </div>
+                  <div class="frame-parent1">
+                    <div class="first-name-wrapper">
+                      <input
+                        type="text"
+                        placeholder="First Name"
+                        class="first-name-input"
+                      />
+                    </div>
+                    <div class="first-name-wrapper">
+                      <input
+                        type="text"
+                        placeholder="Last Name"
+                        class="last-name-input"
+                      />
+                    </div>
+                  </div>
+                  <div class="email-wrapper">
+                    <input type="date" class="date-input" />
+                  </div>
+                  <div class="frame-parent2">
+                    <div class="ellipse-parent">
+                      <input
+                        type="radio"
+                        id="male"
+                        name="gender"
+                        value="male"
+                      />
+                      <label for="male">Pria</label>
+                    </div>
+                    <div class="ellipse-parent">
+                      <input
+                        type="radio"
+                        id="female"
+                        name="gender"
+                        value="female"
+                      />
+                      <label for="female">Wanita</label>
+                    </div>
+                  </div>
+                  <div class="email-wrapper">
+                    <input
+                      type="text"
+                      placeholder="Alamat"
+                      class="address-input"
+                    />
+                  </div>
+                  <div class="nomor-handphone-wrapper">
+                    <input
+                      type="tel"
+                      placeholder="Nomor Handphone"
+                      class="phone-input"
+                    />
+                  </div>
+                  <div class="nomor-handphone-wrapper">
+                    <input
+                      type="tel"
+                      placeholder="Nomor Handphone 2 (Optional)"
+                      class="phone-input-2"
+                    />
+                  </div>
+                  <div class="frame-wrapper1">
+                    <div class="password-parent">
+                      <input
+                        type="password"
+                        placeholder="Password"
+                        class="password-input"
+                      />
+                      <img class="mdieye-icon" alt="" src="mdi:eye.svg" />
+                    </div>
+                  </div>
+                  <div class="vector-parent">
+					<input type="checkbox" id="privacy-policy" class="privacy-checkbox" />
+					<label for="privacy-policy">
+					  <span>I have read and accept the </span>
+					  <span class="privacy-policy">Privacy Policy</span>
+					</label>
+                  </div>
+                  <div class="create-an-account-wrapper">
+                    <button class="create-account-button">Create an account</button>
+                  </div>
+                <div class="already-have-an-account-sign-wrapper">
+                  <div class="email">
+                    <span>Already have an account? </span>
+                    <a href="login.html" class="sign-in">Sign In</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+	<script>
+		
+			document.addEventListener("DOMContentLoaded", function() {
+			  const createAccountButton = document.querySelector('.create-account-button');
+			  
+			  createAccountButton.addEventListener('click', function(event) {
+				event.preventDefault(); // Mencegah pengiriman form secara default
+		  
+				// Ambil nilai dari input
+				const email = document.querySelector('.email-input').value;
+				const firstName = document.querySelector('.first-name-input').value;
+				const lastName = document.querySelector('.last-name-input').value;
+				const dateOfBirth = document.querySelector('.date-input').value;
+				const address = document.querySelector('.address-input').value;
+				const phone = document.querySelector('.phone-input').value;
+				const password = document.querySelector('.password-input').value;
+				const privacyPolicyChecked = document.querySelector('#privacy-policy').checked;
+		  
+				// Validasi
+				if (!email || !firstName || !lastName || !dateOfBirth || !address || !phone || !password) {
+				  alert('Semua kolom harus diisi!');
+				  return;
+				}
+		  
+				// Validasi format email
+				const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+				if (!emailPattern.test(email)) {
+				  alert('Masukkan email yang valid (contoh: example@gmail.com)');
+				  return;
+				}
+		  
+				// Validasi nomor handphone (hanya angka)
+				const phonePattern = /^[0-9]+$/;
+				if (!phonePattern.test(phone)) {
+				  alert('Nomor handphone harus berupa angka!');
+				  return;
+				}
+		  
+				// Validasi checkbox kebijakan privasi
+				if (!privacyPolicyChecked) {
+				  alert('Anda harus menyetujui kebijakan privasi!');
+				  return;
+				}
+		  
+				// Validasi gender (radio button)
+				const genderSelected = document.querySelector('input[name="gender"]:checked');
+				if (!genderSelected) {
+				  alert('Anda harus memilih jenis kelamin!');
+				  return;
+				}
+		  
+				// Jika semua validasi lulus, alihkan ke homepage.html
+				window.location.href = 'homepage.html'; // Ganti dengan URL halaman beranda Anda
+			  });
+			});
+		  
+	</script>
+</body>
+</html>

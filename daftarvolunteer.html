@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./daftarvolunteer.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&display=swap"
+    />
+  </head>
+  <body>
+    <div class="volunteer-registration-page-o-parent">
+      <div class="volunteer-registration-page-o">
+        <div class="frame-parent">
+          <div class="frame-group">
+            <img class="frame-child" alt="" src="framelogo.png" />
+
+            <div class="volunnect">Volunnect</div>
+          </div>
+          <div class="beranda-parent">
+            <a href="./homepage.html" class="beranda"><b>Beranda</b></a>
+            <a href="./eventlist.html" class="beranda"><b>Temukan Event</b></a>
+            <a href="./homepage.html" class="beranda"><b>Tentang Kami</b></a>
+          </div>
+          <div class="frame-container">
+            <div class="daftar-wrapper">
+              <a href="./signin.html" class="daftar">Daftar</a>
+            </div>
+            <div class="login-wrapper">
+              <a href="./login.html" class="login">Login</a>
+            </div>
+          </div>
+        </div>
+        <div class="frame-div">
+          <div class="pendaftaran-volunteer-parent">
+            <b class="pendaftaran-volunteer">Pendaftaran Volunteer</b>
+            <div class="frame-parent1">
+              <div class="pilihan-divisi-parent">
+                <b class="pendaftaran-volunteer">Pilihan Divisi</b>
+                <div class="expand-all-wrapper">
+                  <input
+                    type="text"
+                    class="divisi-input"
+                    placeholder="Masukkan pilihan divisi anda..."
+                  />
+                </div>
+              </div>
+              <div class="pilihan-divisi-parent">
+                <b class="pendaftaran-volunteer">Alasan Memilih Divisi</b>
+                <div class="frame-item">
+                  <textarea
+                    class="alasan-input"
+                    placeholder="Masukkan alasan anda disini..."
+                  ></textarea>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="submit-pendaftaran-volunter-wrapper" id="volunteerWrapper">
+			<div class="submit-pendaftaran-volunter">Submit Pendaftaran Volunteer</div>
+		</div>
+		
+		<div id="overlay" class="overlay" style="display: none;">
+			<div class="overlay-content">
+				<h2>Informasi Pendaftaran</h2>
+				<p>Terima kasih atas partisipasi Anda dalam program volunteer kami. Nantikan info selanjutnya</p>
+				<button id="closeOverlay">Tutup</button>
+			</div>
+		</div>
+        
+		</div>
+      </div>
+    </div>
+    <script>
+      document
+        .getElementById("volunteerWrapper")
+        .addEventListener("click", function () {
+          // Ambil nilai dari input dan textarea
+          var divisiInput = document
+            .querySelector(".divisi-input")
+            .value.trim();
+          var alasanInput = document
+            .querySelector(".alasan-input")
+            .value.trim();
+
+          // Periksa apakah input tidak kosong
+          if (divisiInput !== "" && alasanInput !== "") {
+            document.getElementById("overlay").style.display = "flex"; // Tampilkan overlay
+          } else {
+            alert("Mohon isi semua kolom inputan."); // Tampilkan peringatan jika ada kolom yang kosong
+          }
+        });
+
+      // Menutup overlay ketika tombol "Tutup" diklik
+      document
+        .getElementById("closeOverlay")
+        .addEventListener("click", function () {
+          document.getElementById("overlay").style.display = "none";
+        });
+
+      // Jika Anda ingin menutup overlay ketika pengguna mengklik di mana saja di overlay
+      document
+        .getElementById("overlay")
+        .addEventListener("click", function (event) {
+          if (event.target === this) {
+            // Hanya menutup jika area luar overlay diklik
+            this.style.display = "none";
+          }
+        });
+    </script>
+  </body>
+</html>
